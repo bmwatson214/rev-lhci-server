@@ -2,7 +2,7 @@ const {createServer} = require('@lhci/server');
 
 console.log('Starting server...');
 createServer({
-  port: 8080,
+  port: process.env.PORT,
   storage: {
     storageMethod: 'sql',
     sqlDialect: 'sqlite',
