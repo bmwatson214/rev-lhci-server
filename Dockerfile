@@ -1,11 +1,10 @@
 FROM node:12-slim
 
-COPY package*.json ./
-
+WORKDIR /usr/src/lhci
+COPY package.json .
+COPY lighthouserc.json .
 RUN npm install
-
-COPY . .
 
 EXPOSE 9001
 
-CMD [ "node", "index.js" ]
+CMD [ "npm", "start" ]

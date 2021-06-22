@@ -4,6 +4,7 @@
   "description": "Store and manage Rev's historical lighthouse data",
   "main": "index.js",
   "scripts": {
+    "start": "lhci server --config=./lighthouserc.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
